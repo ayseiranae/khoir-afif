@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khoir & Afif - Wedding Invitation</title>
+    <link rel="icon" type="image/x-icon" href="elements/ayseira-logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet"> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Scheherazade&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Amplop Pembuka -->
+    <div class="amplop-overlay" id="amplop">
+      <div class="amplop-card">
+        <img
+          src="elements/corner-top-right.png"
+          alt="Corner Top Right"
+          class="corner-img top-right"
+        />
+        <img
+          src="elements/corner-bottom-left.png"
+          alt="Corner Bottom Left"
+          class="corner-img bottom-left"
+        />
+
+        <p class="judul">UNDANGAN PERNIKAHAN</p>
+        <h1 class="nama-mempelai">Khoir & Afif</h1>
+        <p class="kepada">Kepada Yth.<br />Bpk/Ibu/Saudara/i</p>
+        <h2 class="nama-tamu" id="namaTamu">Nama Tamu</h2>
+        <p class="lokasi">di Tempat</p>
+        <button class="buka-undangan-btn" onclick="bukaUndangan()">
+          BUKA UNDANGAN
+        </button>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="overlay">
+        <img
+          src="elements/flower_border_left.png"
+          class="ornament left"
+          alt="Left Ornament"
+        />
+        <div class="hero-text">
+          <p class="subtitle">THE WEDDING OF</p>
+          <h1 class="bride-groom">Khoir & Afif</h1>
+          <p class="wedding-date">Ahad, 08 Juni 2025</p>
+          <div id="countdown" class="countdown">
+            <div>
+              <span id="days">00</span>
+              <p>Hari</p>
+            </div>
+            <div>
+              <span id="hours">00</span>
+              <p>Jam</p>
+            </div>
+            <div>
+              <span id="minutes">00</span>
+              <p>Menit</p>
+            </div>
+            <div>
+              <span id="seconds">00</span>
+              <p>Detik</p>
+            </div>
+          </div>
+          <a
+            class="save-btn"
+            href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Pernikahan+Khoir+%26+Afif&dates=20250608T020000Z/20250608T040000Z&details=Undangan+Pernikahan+Khoir+%26+Afif&location=&sf=true&output=xml"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Save The Date
+          </a>
+        </div>
+        <img
+          src="elements/flower_border_right.png"
+          class="ornament right"
+          alt="Right Ornament"
+        />
+      </div>
+      <div class="section-divider-right"></div>
+    </section>
+
+    <section class="verse-section">
+      <div class="verse-content">
+        <h2 class="mid-title">Match Made in Heaven</h2>
+        <div class="underline"></div>
+        <div class="verse-text">
+          <p>
+            “Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan
+            untukmu istri-istri dari jenismu sendiri, supaya kamu cenderung dan
+            merasa tenteram kepadanya, dan dijadikan-Nya di antaramu rasa kasih
+            dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat
+            tanda-tanda bagi kaum yang berpikir.”
+          </p>
+          <p class="surah">QS Ar-Rum: 21</p>
+        </div>
+      </div>
+
+      <div class="custom-shape-divider-bottom">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M0,0 C300,100 900,100 1200,0 L1200,120 L0,120 Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- <section class="intro-section">
+        <div class="hanging-stars">
+          <img src="elements/stars_decor.svg" alt="Ornamen Bintang" />
+        </div>
+      </section>       -->
+
+    <section class="intro-section">
+      <div class="intro-content">
+        <p class="bismillah">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
+        <h3 class="salam">Assalamu’alaikum Warahmatullaahi Wabarakaatuh</h3>
+        <p class="mukadimah">
+          Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan.
+          <br />
+          Ya Allah, semoga ridho-Mu tercurah mengiringi pernikahan kami.
+        </p>
+        <div class="bride-profile">
+          <h2 class="calligraphy-name">Khoiriyah</h2>
+          <p class="child-of">Putri dari</p>
+          <p class="child-of">Bpk. Paimin &amp Ibu Siti Khotijah</p>
+        </div>
+        <div class="and-divider">
+          <span class="line"></span>
+          <span class="ampersand">&</span>
+          <span class="line"></span>
+        </div>
+        <div class="bride-profile">
+          <h2 class="calligraphy-name">Muhammad Afifuddin</h2>
+          <p class="child-of">Putra dari</p>
+          <p class="child-of">Bpk. Abdul Kharis &amp Masrukah</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="verse-section">
+      <div class="custom-shape-divider-top">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M0,0 C300,100 900,100 1200,0 L1200,120 L0,120 Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </section>
+
+    <section class="flip-card-section">
+      <div class="flip-card" id="akadCard">
+        <div class="flip-card-inner">
+          <!-- Sisi Depan (polosan) -->
+          <div class="flip-card-front">
+            <div class="front-decor">
+              <!-- Bisa isi hiasan SVG atau gambar di sini -->
+            </div>
+          </div>
+
+          <!-- Sisi Belakang (isi lengkap akad) -->
+          <div class="flip-card-back">
+            <div class="card-back-layout">
+              <div class="card-label">
+                <div class="flip">AKAD NIKAH</div>
+              </div>
+              <div class="card-content">
+                <div class="card-date">
+                  <div class="number">08</div>
+                  <div class="text">
+                    <div>AHAD</div>
+                    <div>JUNI</div>
+                    <div>2025</div>
+                  </div>
+                </div>
+                <div class="card-underline"></div>
+                <div class="akad-time">
+                  <p>🕘 09.00 WIB sd Selesai</p>
+                  <p><strong>LOKASI ACARA:</strong><br /></p>
+                  <p>Ds. Boto 01/01</p>
+                  <p>Kec. Jaken Kab. Pati</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front"></div>
+          <div class="flip-card-back">
+            <div class="card-back-layout">
+              <div class="card-content">
+                <div class="card-date">
+                  <div class="number">23</div>
+                  <div class="text">
+                    <div>RABU</div>
+                    <div>APRIL<br />2025</div>
+                  </div>
+                </div>
+                <div class="card-underline"></div>
+                <div class="resepsi-time">
+                  <p>🕘 10.00 WIB sd selesai</p>
+                  <p><strong>LOKASI ACARA:</strong></p>
+                  <p>Ds. Boto RT 01/RW 01</p>
+                  <p>Kec. Jaken Kab. Pati</p>
+                </div>
+              </div>
+              <div class="card-label">RESEPSI</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="verse-section">
+      <h2 class="mid-title">Event Location</h2>
+      <div class="underline"></div>
+      <div class="addres-text">
+        <p>Ds. Boto 01/01 Kec. Jaken Kab. Pati”</p>
+      </div>
+
+      <div style="overflow: hidden; margin-bottom: 50px; padding-bottom: 0px">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3961.6821375714912!2d111.195033!3d-6.808465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwNDgnMzAuNSJTIDExMcKwMTEnNDIuMSJF!5e0!3m2!1sid!2sid!4v1746700854025!5m2!1sid!2sid"
+          width="100%"
+          height="250"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+
+      <div class="custom-shape-divider-bottom">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M0,0 C300,100 900,100 1200,0 L1200,120 L0,120 Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </section>
+
+    <section class="doa-section">
+      <div class="doa-card">
+        <h3 class="mid-title">Do'a Pengantin</h3>
+        <div class="underline"></div>
+        <p class="arabic-doa">
+          بَارَكَ اللَّهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي
+          خَيْرٍ
+        </p>
+        <p class="indo-doa">
+          "Semoga Allah memberkahimu di waktu bahagia dan memberkahimu di waktu
+          susah dan semoga Allah menyatukan kalian berdua dalam kebaikan."
+        </p>
+        <p class="sumber">— (HR. Abu Dawud no 2130)</p>
+      </div>
+    </section>
+
+    <section class="ucapan-section">
+      <div class="ucapan-conte nt">
+        <p class="ucapan-teks">
+          Merupakan kehormatan serta kebahagiaan bagi kami sekeluarga apabila
+          Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada
+          kedua mempelai.
+        </p>
+        <p class="salam">Wassalamualaikum Warahmatullahi Wabarakatuh</p>
+        <p class="ucapan-turut">Turut berbahagia, segenap keluarga besar</p>
+        <div class="ucapan-nama">Khoir & Afif</div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+    <audio id="bg-music" src="audio/lagu.mp3" loop></audio>
+
+    <div id="fall-container"></div>
+  </body>
+</html>
