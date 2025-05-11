@@ -694,7 +694,7 @@ Content section .card-content {
 #gift-section {
   font-family: "Times New Roman", Times, serif;
   padding: 10vw;
-  background-color: var(--bg-color);
+  background-color: var(--secondary-color);
   text-align: center;
   margin-top: 20vh;
 }
