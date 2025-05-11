@@ -223,3 +223,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   observer.observe(intro);
 });
+
+document.getElementById("transfer-dana").addEventListener("click", function () {
+  document.getElementById("transfer-info").textContent =
+    "Please transfer your gift to Dana account: 082324669606";
+});
+
+document
+  .getElementById("transfer-rekening")
+  .addEventListener("click", function () {
+    document.getElementById("transfer-info").textContent =
+      "Please transfer your gift to Bank Account: BRI 5945-0103-2316-537 a/n Khoiriyah";
+  });
