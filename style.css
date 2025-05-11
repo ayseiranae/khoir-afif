@@ -691,13 +691,49 @@ Content section .card-content {
 }
 
 /* section 6 */
+#gift-section {
+  font-family: "Times New Roman", Times, serif;
+  padding: 10vw;
+  background-color: var(--bg-color);
+  text-align: center;
+  margin-top: 20vh;
+}
+
+.gift-methods {
+  margin-top: 10vw;
+}
+
+.gift-btn {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  padding: 2vw 5vw;
+  border: none;
+  border-radius: 3vw;
+  font-size: 4vw;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.gift-btn:hover {
+  background-color: var(--text-color);
+}
+
+.gift-info {
+  margin-top: 10vw;
+  font-size: 4vw;
+  color: var(--text-color);
+}
+
+/* section 7 */
 .ucapan-section {
   background: linear-gradient(
     to bottom,
     var(--secondary-color),
     var(--primary-color)
   );
-  padding: 25vh 5vw;
+  padding: 20vh 5vw;
+  padding-bottom: 5vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -727,4 +763,15 @@ Content section .card-content {
   font-size: 12vw;
   margin-top: 20vw;
   color: var(--text-color);
+}
+
+.bunga-bawah {
+  margin-top: 30px;
+  transform: rotate(-45deg);
+  width: 50vw;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.8;
 }
