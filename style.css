@@ -621,10 +621,17 @@ Content section .card-content {
 
 /* resepsi */
 .resepsi-time p {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   color: var(--text-color);
   text-align: right;
-  margin: 2px 50px 5px 10px;
+  margin: 5px 50px 5px 10px;
+  line-height: 1rem;
+}
+.resepsi-time .date p {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  text-align: right;
+  margin: 5px 50px 5px 10px;
   line-height: 1rem;
 }
 
